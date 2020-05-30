@@ -1,0 +1,19 @@
+{
+  "arch": "x86_64",
+  "build": "py27he6710b0_0",
+  "build_number": 0,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "numpy >=1.12.1,<2.0a0",
+    "python >=2.7,<2.8.0a0",
+    "python-dateutil >=2.5.*",
+    "pytz"
+  ],
+  "license": "BSD 3-clause",
+  "name": "pandas",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1549300849344,
+  "version": "0.24.1"
+}

@@ -1,0 +1,47 @@
+{% set version = "0.24.1" %}
+
+package:
+  name: pandas
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/p/pandas/pandas-{{ version }}.tar.gz
+  url: https://github.com/pandas-dev/pandas/releases/download/v{{ version }}/pandas-{{ version }}.tar.gz
+  sha256: 435821cb2501eabbcee7e83614bd710940dc0cf28b5afbc4bdb816c31cec71af
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - python
+    - pip
+    - cython
+    - numpy 1.14.*  # [py==37]
+    - numpy 1.12.*  # [py!=37]
+  run:
+    - python
+    - {{ pin_compatible('numpy') }}
+    - python-dateutil >=2.5.*
+    - pytz
+
+test:
+  imports:
+    - pandas
+
+about:
+  home: http://pandas.pydata.org
+  license: BSD 3-clause
+  license_file: LICENSE
+  summary: 'High-performance, easy-to-use data structures and data analysis tools.'
+
+extra:
+  recipe-maintainers:
+    - jreback
+    - jorisvandenbossche
+    - msarahan
+    - ocefpaf
+    - TomAugspurger
