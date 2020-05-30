@@ -1,2 +1,0 @@
-# project_files
-final_year_project_uploads
