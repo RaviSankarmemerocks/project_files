@@ -1,0 +1,19 @@
+Algorithm:
+step 1: start the program
+step 2: import all required libraries
+step 3:import all distraction class folders(c0-c9)
+step 4: see the popularity of each class
+step 5: build a cnn model
+	Input → Convolution layer → Batch normalization → Convolution layer 
+              →  Batch Normalization → Maxpooling → Dropout → Convolution layer
+              →    Batch normalization →Convolution layer →Batch Normalization
+              →Maxpooling → Dropout → Convolution layer → Batch normalization 
+               →Convolution layer → Batch Normalization → Maxpooling →
+         Dropout → Flatten → Dense → Batch Normalization → Dropout →    
+         Dense→Dropout →Dense → Output.
+step 6: train the model with 80% of images from each distraction class
+step 7: test the model the tghge testing sample images
+step 8: see the learning curve
+step 9: if the probalibily of the image to its corresponding distraction class is satisfactory then safe the model.
+step 10: stop the program.
+
